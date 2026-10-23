@@ -26,6 +26,12 @@ Content-Type: application/json
 
 {"matricula":"","nombre":"A","correo":"no-es-correo"}
 
+### Matrícula con espacio interno: 400 DATOS_INVALIDOS
+POST {{baseUrl}}/alumnos
+Content-Type: application/json
+
+{"matricula":"A 001","nombre":"Ada Lovelace","correo":"ada@universidad.mx"}
+
 ### Matrícula duplicada: ejecutar dos veces para obtener 409
 POST {{baseUrl}}/alumnos
 Content-Type: application/json
